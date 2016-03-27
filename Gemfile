@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -8,6 +8,8 @@ gem 'sqlite3'
 # Use SCSS for stylesheets
 
 gem 'bootstrap-sass'
+
+gem 'cocoon'
 
 gem 'simple_form'
 
