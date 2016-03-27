@@ -1,1 +1,13 @@
-%h1 This is A placeHolder
+=simple_form_for @recipe,html: {multipart:true} do |f|
+	- if @recipe.errors.any?
+		#errors
+			%p
+				=@recipe.errors.count
+				Prevented this recipe from saving
+			%ul
+				-@recipe.errors.full_messages.each do |msg|
+					%li= msg
+	.panel-body
+		=f.input :title,label: "Title",class: "form-control"
+		=f.input :description,label: "Description",class: "form-control"
+		=f.submit class:"btn btn-primary"
