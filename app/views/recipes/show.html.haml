@@ -6,6 +6,9 @@
 			#recipe_info
 				%h1=@recipe.title
 				%p.description=@recipe.description
+				%p
+				Submiited by
+				=@recipe.user.email
 	.row
 		.col-md-6
 			#ingredients
@@ -22,6 +25,7 @@
 	.row
 		.col-md-6
 			%br/
-			=link_to "Edit",edit_recipe_path(@recipe),class:"btn btn-primary"
-			=link_to "Delete",@recipe,method: :delete,class:"btn btn-danger",data:{confirm:"Are you Sure?"}
-			=link_to "Back",root_path,class:"btn btn-info"
+			-if user_signed_in?
+				=link_to "Edit",edit_recipe_path(@recipe),class:"btn btn-primary"
+				=link_to "Delete",@recipe,method: :delete,class:"btn btn-danger",data:{confirm:"Are you Sure?"}
+				

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160327201121) do
+ActiveRecord::Schema.define(version: 20160327202206) do
 
   create_table "directions", force: :cascade do |t|
     t.string   "step"
@@ -42,6 +42,8 @@ ActiveRecord::Schema.define(version: 20160327201121) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
   end
+
+  add_index "recipes", ["user_id"], name: "index_recipes_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
