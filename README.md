@@ -10,8 +10,8 @@ Features of ChefGuide
 * [New Recipe using Nested Form!(2)](https://raw.githubusercontent.com/BelieveC/Rails_ChefGuide/master/CookBook_App_Preview/new2.png)
 * [Edit Recipe(1)](https://raw.githubusercontent.com/BelieveC/Rails_ChefGuide/master/CookBook_App_Preview/edit.png)
 * [Edit Recipe(2)](https://raw.githubusercontent.com/BelieveC/Rails_ChefGuide/master/CookBook_App_Preview/edit2.png)
-* [Show Recipe(1)]https://raw.githubusercontent.com/BelieveC/Rails_ChefGuide/master/CookBook_App_Preview/show.png)
-* [Show Recipe(1)](https://raw.githubusercontent.com/BelieveC/Rails_ChefGuide/master/CookBook_App_Preview/show2.png)
+* [Show Recipe(1)](https://raw.githubusercontent.com/BelieveC/Rails_ChefGuide/master/CookBook_App_Preview/show.png)
+* [Show Recipe(2)](https://raw.githubusercontent.com/BelieveC/Rails_ChefGuide/master/CookBook_App_Preview/show2.png)
 * [Log In](https://raw.githubusercontent.com/BelieveC/Rails_ChefGuide/master/CookBook_App_Preview/signin.png)
 * [Sign Up](https://raw.githubusercontent.com/BelieveC/Rails_ChefGuide/master/CookBook_App_Preview/signup.png)
 
