@@ -1,7 +1,27 @@
-=image_tag(@recipe.image.url(:medium))
-%h1= @recipe.title
-%p= @recipe.description
-
-=link_to "Edit",edit_recipe_path(@recipe),class:"btn btn-primary"
-=link_to "Delete",@recipe,method: :delete,class:"btn btn-danger",data:{confirm:"Are you Sure?"}
-=link_to "Back",root_path,class:"btn btn-info"
+.main_content
+	#recipe_top.row
+		.col-md-4
+			=image_tag @recipe.image.url,class:"recipe_image"
+		.col-md-8
+			#recipe_info
+				%h1=@recipe.title
+				%p.description=@recipe.description
+	.row
+		.col-md-6
+			#ingredients
+				%h2 Ingredients
+				%ul
+					-@recipe.ingredients.each do|ingredient|
+						%li=ingredient.name
+		.col-md-6
+			#directions
+				%h2 Directions
+				%ul 
+					-@recipe.directions.each do |direction|
+						%li=direction.step
+	.row
+		.col-md-6
+			%br/
+			=link_to "Edit",edit_recipe_path(@recipe),class:"btn btn-primary"
+			=link_to "Delete",@recipe,method: :delete,class:"btn btn-danger",data:{confirm:"Are you Sure?"}
+			=link_to "Back",root_path,class:"btn btn-info"
