@@ -8,6 +8,7 @@
 				-@recipe.errors.full_messages.each do |msg|
 					%li= msg
 	.panel-body
+		=f.input :image, class:"form-control"
 		=f.input :title,label: "Title",class: "form-control"
 
 		=f.input :description,label: "Description",class: "form-control"
