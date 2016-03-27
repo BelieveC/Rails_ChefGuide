@@ -1,5 +1,9 @@
--@recipes.each do |recipe|
-	%h1=link_to recipe.title,recipe
-
-%br/
-=link_to "New Recipe",new_recipe_path,class:"btn btn-danger"
+-@recipes.each_slice(3) do |recipe|
+	.row
+		-recipe.each do |recipe|
+			.col-md-4
+				.recipe
+					.image-wrapper
+						=link_to recipe do
+							=image_tag recipe.image.url(:medium)
+						%h2=link_to recipe.title,recipe
