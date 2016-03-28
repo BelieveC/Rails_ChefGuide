@@ -1,4 +1,4 @@
-[My ChefGuide App](https://github.com/BelieveC/Rails_ChefGuide)
+[My ChefGuide App](https://cwaychefguide.herokuapp.com/)
 ================================
 
 Features of ChefGuide
