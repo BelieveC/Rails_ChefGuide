@@ -38,6 +38,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'haml'
 
+gem 'foundation_rails'
 gem'paperclip'
 
 # Use ActiveModel has_secure_password
